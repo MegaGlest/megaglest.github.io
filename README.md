@@ -1,4 +1,4 @@
 megaglest.github.io
 ===================
 
-Testing GitHub pages for MegaGlest
+GitHub pages for MegaGlest - Work in Progress
