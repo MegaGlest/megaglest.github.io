@@ -1,0 +1,9 @@
+<map id="test" name="test">
+<area shape="poly" id="node1" href="egypt_air_pyramid_full.html" title="Air\nPyramid" alt="" coords="185,461,95,430,5,461,5,510,185,510"/>
+<area shape="poly" id="node2" href="egypt_desert_camp_full.html" title="Desert\nCamp" alt="" coords="205,132,130,101,54,132,54,181,205,181"/>
+<area shape="poly" id="node6" href="egypt_temple_full.html" title="Temple" alt="" coords="205,254,132,238,60,254,60,281,205,281"/>
+<area shape="poly" id="node3" href="egypt_sphinx_full.html" title="Sphinx" alt="" coords="350,467,279,450,208,467,208,494,350,494"/>
+<area shape="poly" id="node4" href="egypt_obelisk_full.html" title="Obelisk" alt="" coords="262,350,187,334,112,350,112,377,262,377"/>
+<area shape="poly" id="node5" href="egypt_pyramid_full.html" title="Pyramid" alt="" coords="326,22,243,5,161,22,161,49,325,49"/>
+<area shape="poly" id="node7" href="egypt_farm_full.html" title="Farm" alt="" coords="395,138,338,122,281,138,281,165,394,165"/>
+</map>

@@ -1,0 +1,11 @@
+<map id="test" name="test">
+<area shape="poly" id="node1" href="persian_palace_full.html" title="Palace" alt="" coords="234,22,168,5,101,22,101,49,234,49"/>
+<area shape="poly" id="node7" href="persian_farm_full.html" title="Farm" alt="" coords="151,118,94,101,38,118,38,145,151,145"/>
+<area shape="poly" id="node8" href="persian_house_full.html" title="House" alt="" coords="319,118,253,101,187,118,187,145,319,145"/>
+<area shape="poly" id="node2" href="persian_tent_full.html" title="Tent" alt="" coords="304,371,253,354,202,371,202,398,304,398"/>
+<area shape="poly" id="node6" href="persian_minaret_full.html" title="Minaret" alt="" coords="332,487,253,470,174,487,174,514,332,514"/>
+<area shape="poly" id="node3" href="persian_snake_basket_full.html" title="Snake\nBasket" alt="" coords="157,228,81,197,5,228,5,277,157,277"/>
+<area shape="poly" id="node4" href="persian_elephant_cage_full.html" title="Elephant\nCage" alt="" coords="547,365,453,334,359,365,359,414,547,414"/>
+<area shape="poly" id="node5" href="persian_temple_full.html" title="Temple" alt="" coords="326,234,253,218,180,234,180,261,326,261"/>
+<area shape="poly" id="node9" href="persian_blacksmith_full.html" title="Blacksmith" alt="" coords="556,234,453,218,350,234,350,261,556,261"/>
+</map>

@@ -1,0 +1,11 @@
+<map id="test" name="test">
+<area shape="poly" id="node1" href="indian_main_teepee_full.html" title="Main\nTeepee" alt="" coords="300,36,222,5,144,36,144,85,300,85"/>
+<area shape="poly" id="node3" href="indian_reed_full.html" title="Reed" alt="" coords="119,528,62,511,5,528,5,554,119,554"/>
+<area shape="poly" id="node4" href="indian_tent_full.html" title="Tent" alt="" coords="274,158,222,142,171,158,171,185,273,185"/>
+<area shape="poly" id="node6" href="indian_big_tent_full.html" title="Big\nTent" alt="" coords="430,269,374,238,318,269,318,318,430,318"/>
+<area shape="poly" id="node8" href="indian_horse_farm_full.html" title="Horse\nFarm" alt="" coords="512,405,443,374,375,405,375,455,512,455"/>
+<area shape="poly" id="node2" href="indian_beehive_full.html" title="Beehive" alt="" coords="215,624,135,607,56,624,56,650,215,650"/>
+<area shape="poly" id="node5" href="indian_totem_full.html" title="Totem" alt="" coords="275,528,209,511,142,528,142,554,275,554"/>
+<area shape="poly" id="node9" href="indian_round_tent_full.html" title="Round\nTent" alt="" coords="294,269,222,238,150,269,150,318,294,318"/>
+<area shape="poly" id="node7" href="indian_campfire_full.html" title="Campfire" alt="" coords="328,411,239,395,151,411,151,438,328,438"/>
+</map>
