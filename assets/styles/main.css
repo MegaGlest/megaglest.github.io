@@ -1,0 +1,388 @@
+/* cmsms stylesheet: main modified: 12/21/2015 11:43:21 PM */
+body {
+    margin: 0 auto;
+    width: 1016px;
+
+    background-color: #161616;
+    font-size: 0.8em;
+    color: #fff6c0;
+    font-family: "DejaVu Sans Condensed", "Lucida Sans Unicode","Lucida Grande","Lucida Sans", sans-serif;
+}
+
+/*
+ * Structure
+ */
+
+/* Header */
+#header {
+    width: 1016px;
+    height: 313px;
+    margin: 0 auto;
+    background: url("/assets/pics/header.jpg") no-repeat;
+}
+
+/* Horizontal menu */
+#menu {
+    background-image: url("/assets/pics/menu.jpg");
+    background-repeat: no-repeat;
+    height: 65px;
+}
+
+/* Side menus */
+#menu #first { float: left }
+#menu #second { float: right }
+
+/* Main content */
+#content {
+    width: 510px;
+    margin: 0 auto;
+    background: url("/assets/pics/wood_panel.jpg") repeat-y;
+}
+
+/* Article (core text of the page) */
+#article {
+    font-size: 1.1em;
+    line-height: 1.5em;
+    padding: 2em;
+    text-align: justify;
+}
+
+#article thead {
+    font-weight: bold;
+}
+
+#article table {
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+/* #article img {
+    padding:10px;
+} */
+
+table#servers {
+    margin: 0 auto;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+th, td {
+    border-collapse: collapse;
+    border: 1px solid #FFE884;
+    text-align: center;
+    padding: 2px 5px;
+}
+
+#servers .title {
+    width: 12em;
+    word-break: break-all;
+}
+
+
+/* end of article has to be below side modules */
+#end_article {
+    clear: both;
+}
+
+/* Side modules */
+#aside_left {
+    float: left;
+    width: 420px;
+    margin-left: -168px;
+}
+#aside_left .module, #aside_right .inmodule {
+    margin-left: 168px;
+    margin-right: 18px;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+#aside_right {
+    float: right;
+    width: 420px;
+    margin-right: -168px;
+}
+#aside_right .module, #aside_right .inmodule {
+    margin-right: 155px;
+    margin-left: 35px;
+    padding-left: 0.5em;
+    padding-right: 1em;
+}
+
+.module {
+    margin-top: 10px;
+    margin-bottom: 3em;
+}
+
+/* Tables have a "natural" margin bottom in cells already */
+table.module {
+    margin-bottom: 2em;
+}
+
+.aside .up_image {
+    width: 420px;
+    height: 278px;
+}
+.aside .down_image {
+    width: 420px;
+    height: 191px;
+}
+
+/* fill .up_image and .down_image with content */
+.aside .content {
+    margin-top: -210px;
+    margin-bottom: -100px;
+}
+
+/* Footer */
+#footer {
+    width: 1016px;
+    height: 143px;
+    margin: 0 auto;
+    background-image: url("/assets/pics/footer_small.jpg");
+}
+
+
+/*
+ * Text display: side, colors, etc.
+ */
+a { color: #ecc72d }
+a:link { text-decoration: none }
+a:visited { text-decoration: none }
+a:hover { text-decoration: underline }
+a img { border: 0; }
+#content a:link strong {
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQEAYAAABPYyMiAAAABmJLR0T///////8JWPfcAAAACXBIWXMAAABIAAAASABGyWs+AAAACXZwQWcAAAAQAAAAEABcxq3DAAAAWklEQVRIx2NgGAWjYIABI7pAScmaNU+f/v9PSGNPT0iItDQjQf241OEEhBxArANh6ohVT7IFpJqHy1yWgXIQzqihdwgwkWsgqepw+ZiFWAPIdSDJuWAUjDgAAIeCdnRXQQj1AAAAJXRFWHRjcmVhdGUtZGF0ZQAyMDA5LTA2LTA4VDExOjI5OjMzKzAyOjAwMxsHTwAAACV0RVh0bW9kaWZ5LWRhdGUAMjAwOS0wNi0wOFQxMToyOTozMyswMjowMGyqcXsAAAAASUVORK5CYII=") center right no-repeat;
+    padding-right: 18px;
+}
+a.magnet {
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAPlQTFRFCwsLDAwMFxcXGxsbLi4uNzc3QkJCUFBQgAAApAAApwAA////pAAAqQAApwAAgAAAogAAqgAACQkJCgoKJCQkJSUlNjY2NjY2EBAQExMTJiYmJycnERERFBQUNzc3BAQEBAQEBQUFBQUFgAAAnwAAqgAAqAEBpQEBnAAAqgAAgAAAhwAAjAAAkAAAlAAAmAAAiAgIiwoKwjgzxzs1piUlrCkp1lhR22hg6HRr11JS3Gpj84N7qam7srLDtLTGubnKuzExvjk5wScnxkNDzB0dzMzM0E1N0dHR01pU1FBL1mNd12Ve2BYW20VA4j055OTk5V5e5W5p7XVvV0/kXQAAADx0Uk5TAAAAAAAAAAAAAAAADQ0ZG1paXl9lZWVmbm5ubnJyc3+AgYKKoaGlpsPDzMzMzMzM0dHd3ePj6PPz/f39NO9uQgAAAKlJREFUGBkFwYtKAkEUANAzd28q2ROCCvv/L0sKMlZyC1ZnZzqnbLUy5FOqh7r0kMiX26vBcnf6vJAMr/dvDfFe9l2S291HrTJ3NS+Gleeb+B33Y1nlpUyCHJZ6mOdDXYYkWD+288x8bg9rgr50oLdO0EsAUTpBzwAiO0EvG2BTOsHXfJxa6/17Hk8kjaUpGpUgNxGttZbXEQwr5fgz/XX9ajxNVdkCAP4B7nRRloXeEywAAAAASUVORK5CYII=") center right no-repeat;
+    padding-right: 18px;
+}
+
+img.right {
+    float: right;
+    margin: 0 0 10px 10px;
+}
+img.left {
+    float: left;
+    margin: 0 10px 10px 0;
+}
+ul {
+    list-style-position: inside;
+}
+ul { padding-left: 0; }
+#menu ul { padding-left: 10px; }
+
+/* news dates, scores: gold */
+.info { color: #ecc72d; }
+
+
+/* Logo */
+#header #logo {
+    width: 365px;
+    margin: 0 auto;
+    position: relative;
+    top: 25%;
+}
+
+@font-face {
+  font-family: 'Cardo';
+  font-style: normal;
+  font-weight: normal;
+  src: url('/assets/fonts/Cardo.eot');
+  src: local('Cardo'), url('/assets/fonts/Cardo.ttf') format('truetype');
+}
+
+h1 {
+    font-size: 1.5em;
+    font-family: 'Cardo', arial, serif;
+    margin: -70px auto 1em auto;
+    text-align: center;
+    color: #ecc72d;
+    font-weight: normal;
+    text-shadow: black 2px 2px 0;
+    text-transform: uppercase;
+}
+
+h1:first-letter {
+    font-size: 1.2em;
+}
+
+#content h2 {
+    font-family: 'Cardo', serif;
+    font-weight: normal;
+    color: #ecc72d;
+    margin-top: 2em;
+}
+
+/* Content */
+
+#dl_button {
+  margin: 0 auto;
+  text-align: center;
+}
+
+#platform {
+  display: block;
+}
+
+/* Module titles */
+.aside h3 { display: block; margin-bottom: 0}
+
+.aside h3#news { margin-left: 240px; }
+.aside h3#servers { margin-left: 200px; }
+.aside h3.forums { margin-left: 230px; }
+.aside h3#links { margin-left: 110px; }
+
+/* Menu links */
+#menu ul { margin: 0; padding: 0}
+#menu li { display: inline; }
+
+#menu a {
+    /* fixed available space: fixed size */
+    font-size: 14px;
+    color: #b5dbb5;
+    font-variant: small-caps;
+    margin: 0 8px;
+}
+
+/* 
+ * Modules
+ */
+#aside_left { background: url("/assets/pics/l_repeat.jpg") repeat-y }
+#aside_left .up_image {   background: url("/assets/pics/l_up.jpg") }
+#aside_left .down_image { background: url("/assets/pics/l_down.jpg") }
+
+#aside_right {background: url("/assets/pics/r_repeat.jpg") repeat-y}
+#aside_right .up_image {background: url("/assets/pics/r_up.jpg")}
+#aside_right .down_image {background: url("/assets/pics/r_down.jpg")}
+
+.aside ul li {
+    list-style-image: url("/assets/pics/star.png");
+    clear: right;
+}
+
+
+/* News module */
+.date {
+    display: block;
+    float: right;
+    margin-top: 1em;
+    margin-bottom: 5px;
+    /* Font */
+    font-family: "DejaVu Serif Condensed", serif;
+    font-style: italic;
+    font-size: 0.9em;
+}
+
+/* Servers module */
+.aside table {
+    width: 200px;
+    margin-left: 50px;
+    text-align:center;
+}
+
+.aside table td:first-child {
+    text-align: left;
+}
+
+
+.aside input {
+    font-size: 0.8em;
+    color: #ecc72d;
+    background: #3c3c3c; 
+    border: 0px solid #000000; 
+    margin:1px
+}
+
+
+
+/* Forums module */
+.forums .date {
+    margin-top: 3px;
+    font-size: 1em;
+}
+
+/* Footer */
+#footer ul {
+    margin: 0 auto;
+    padding-top: 90px;
+    width: 25em;
+}
+#footer li {
+    list-style-type: none;
+    display: inline;
+    margin: 0 1em;
+}
+/* links in the dark space, images above */
+#footer img {
+    vertical-align: -20%;
+}
+
+/*
+ * Additional background images
+ * To prevent rounding issues, we want to allow a slight overlap between the two images.
+ * See http://stackoverflow.com/questions/13200466/google-chrome-widens-by-one-pixel-a-partly-offscreen-div
+ */
+#header_left {
+    float: left;
+    width: 140px;
+    height: 882px;
+
+    background-image: url("/assets/pics/left.jpg");
+    background-repeat: no-repeat;
+    margin-left: -139px;
+}
+
+#header_right {
+    float: right;
+    height: 843px;
+    width: 143px;
+
+    background-image: url("/assets/pics/right.jpg");
+    background-repeat: no-repeat;
+    margin-right: -142px;
+}
+
+#footer_left {
+    float: left;
+    height: 143px;
+    width: 101px;
+    margin-left: -100px;
+    background: url("/assets/pics/footer_left.jpg") no-repeat;
+}
+
+#footer_right {
+    float: right;
+    height: 143px;
+    width: 106px;
+    margin-right: -106px;
+    background: url("/assets/pics/footer_right.jpg") no-repeat;
+
+}
+
+a.gallery {
+    margin: 7px;
+    padding: 0px;
+    border: 3px solid rgba(0, 0, 0, 0);
+    float: left;
+    width: 130px;
+    height: 73px;
+}
+
+a.gallery:hover {
+    border: 3px solid #ecc72d;
+}
+
+a.gallery img {
+    margin: 0px;
+    padding: 0px;
+    width: 130px;
+    height: 73px;
+}
+
+/* Hack to stop float after images. */
+.gallery_container {
+    display: table;
+}

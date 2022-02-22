@@ -1,0 +1,212 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>{{ page.title }}</title>
+  <link rel="stylesheet" href="/assets/styles/main.css">
+</head>
+
+<body>
+  <!-- start header -->
+  <div id="header">
+    <!-- Contain the right and left header images -->
+    <div id="header_left"></div>
+    <div id="header_right"></div>
+    <div id="logo"><a href="/"><img src="/assets/logo.png" alt="MegaGlest logo" /></a></div>
+  </div>
+  <!-- end header -->
+
+  <!-- start menu -->
+  <div id="menu">
+    <ul id="first">
+      <li><a href="/megaglest">Home</a></li>
+      <li><a href="/download">Download</a></li>
+      <li><a href="/get_started">Get started</a></li>
+    </ul>
+    <ul id="second">
+      <li><a href="/media">Media</a></li>
+      <li><a href="/development">Development</a></li>
+      <li><a href="/contact">Contact</a></li>
+    </ul>
+  </div>
+  <!-- end menu -->
+
+  <!-- start left column -->
+  <div id="aside_left" class="aside">
+    <div class="up_image"></div>
+    <div class="content">
+
+      <!-- News module -->
+      <!-- <h3 id="news"><img src="uploads/megaglest2011/titles/news.png" alt="News" /></h3> -->
+
+      <h1 class="module" style="margin-bottom:auto"><a href="/news">News</a></h1>
+      <ul class="module">
+        {% for news in site.news reversed %}
+        <li><a href="{{ news.url }}">{{ news.title }}</a><span class="date">{{ news.date | date: "%-d %b %Y" }}</span>
+        </li>
+        {% if forloop.index == 3 %}
+        {% break %}
+        {% endif %}
+        {% endfor %}
+      </ul>
+      {% if site.news.size > 3 %}
+      <a class="module" href="/news">{{ site.news | size | minus:3 }} more...</a>
+      {% endif %}
+
+      <!-- Server module -->
+      <!-- <h3 id="servers"><a href="http://megaglest.org/servers.html"><img src="uploads/megaglest2011/titles/servers.png" alt="Current servers" /></a></h3> -->
+
+
+      <!-- Newsletter module -->
+      <form action="https://megaglest.us9.list-manage.com/subscribe/post?u=e07db86a97f1a7fbae990b7e6&amp;id=ead75eb143"
+        method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="module" target="_blank"
+        novalidate="novalidate">
+        <h1 class="module" style="margin:auto">Newsletter</h1>
+        <p>Subscribe to our <em><a
+              href="http://us9.campaign-archive1.com/home/?u=e07db86a97f1a7fbae990b7e6&amp;id=ead75eb143">low
+              volume</a></em> newsletter:</p>
+        <label for="mce-FNAME">First Name (optional): </label><br />
+        <input type="text" value="" name="FNAME" class="" id="mce-FNAME"><br />
+        <label for="mce-LNAME">Last Name (optional): </label><br />
+        <input type="text" value="" name="LNAME" class="" id="mce-LNAME"><br />
+        <label for="mce-EMAIL">Your email address: </label><br />
+        <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address"
+          required="required" /><br />
+        <div style="position: absolute; left: -4999px;"><input type="text" name="b_e07db86a97f1a7fbae990b7e6_ead75eb143"
+            tabindex="-1" value="" /></div>
+        <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button" />
+      </form>
+
+      <h1 class="module" style="margin-bottom:auto"><a href="/blogs">Blogs</a></h1>
+      <ul class="module">
+        {% for blog in site.blogs reversed %}
+        <li><a href="{{ blog.url }}">{{ blog.title }}</a></li>
+        <br>
+        {% if forloop.index == 4 %}
+        {% break %}
+        {% endif %}
+        {% endfor %}
+      </ul>
+      {% if site.blogs.size > 4 %}
+      <a class="module" href="/blogs">{{ site.blogs | size | minus:4 }} more...</a>
+      {% endif %}
+
+      <!-- Forums module -->
+      <!-- Commented out since SMF returns horrible things right now. We'll try to update it to the new 2.0 API
+          <h3 id="forums"><a href="http://forums.megaglest.org"><img src="uploads/megaglest2011/titles/forums.png" alt="Forums" /></a></h3>
+          
+  
+          
+          -->
+
+      <!-- FGA -->
+      <!--
+          <div class="module"><a href="http://freegamealliance.com/"><img src="uploads/images/logos/fga.png" alt="Free Game Alliance" style="position:relative; top:0; left:0;z-index:2;display: block; margin-left: auto; margin-right: auto;" /></a></div>
+          -->
+
+    </div>
+    <div class="down_image"></div>
+  </div>
+  <!-- end left column -->
+
+  <!-- start right column -->
+  <div id="aside_right" class="aside">
+    <div class="up_image"></div>
+    <div class="content">
+
+      <!-- Links module -->
+      <!--<h3 id="links"><img src="uploads/megaglest2011/titles/links.png" alt="Links" /></h3>-->
+      <!-- <h1 class="module"  style="margin-bottom:auto">Resources</h1> -->
+      <div class="module">
+        Community
+        <ul>
+          <li><a href="https://forum.megaglest.org/"><span style="font-size: 14pt">Forum</span></a></li>
+        </ul>
+        Documentation
+        <ul>
+          <li><a href="https://docs.megaglest.org/">Wiki</a></li>
+          <li><a href="http://faq.megaglest.org/">FAQ</a></li>
+          <li><a href="http://readme.megaglest.org/">README file</a></li>
+          <li><a href="techtree/">The Megapack techtree</a></li>
+        </ul>
+        <br />
+        Mods
+        <ul>
+          <li><a href="https://docs.megaglest.org/Mods/List">Faction / tech tree
+              list</a></li>
+          <li><a href="https://docs.megaglest.org/Tilesets/List">Tilesets
+              list</a></li>
+          <li><a href="https://docs.megaglest.org/Maps/List">Maps list</a></li>
+        </ul>
+        <br />
+        Friends
+        <ul>
+          <li><a href="http://annexconquer.com/"
+              title="Annex: Conquer the World - the first Krazy Keet Games production, based on the MegaGlest Engine"><img
+                src="/assets/annex_small.png" alt="Annex: Conquer the World logo" style="vertical-align:middle" /></a>
+          </li>
+          <li><a href="http://krazykeetgames.com/?p=64"
+              title="The latest work of Krazy Keet Games, based on the MegaGlest Engine"><img
+                src="/assets/terra_centauri_149x40.png" title="Terra Centauri logo" style="vertical-align:middle" /></a>
+          </li>
+          <!--<li><a href="http://freegamealliance.com/">Free Game Alliance</a></li>-->
+          <!--<li><a href="http://glestae.sourceforge.net/">Glest Advanced
+            Engine</a></li> project is dead-->
+          <li><a href="http://glest.org/">Glest</a></li>
+        </ul>
+        <br />
+        Translations
+        <ul>
+          <li><a
+              href="http://translate.google.com/translate?sl=en&amp;ie=UTF-8&amp;act=url&amp;u=http%3A%2F%2Fmegaglest.org%2Fdownload">Google
+              translation of this page</a></li>
+        </ul>
+        <br />
+        Social media + Donations<br />
+        <br />
+        <a href="http://identi.ca/MegaGlest"><img src="/assets/identi.png" alt="identi.ca icon"
+            style="display: float; background-color: #FFFFFF; border-radius: 3px" width="32" /></a>
+        <a href="http://twitter.com/MegaGlest"><img src="/assets/twitter-hand-drawn-32.png" alt="Twitter icon"
+            style="display: float" width="32" /></a>
+        <a href="http://facebook.com/MegaGlest"><img src="/assets/facebook-hand-drawn-32.png" alt="Facebook icon"
+            style="display: float" width="32" /></a>
+        <a href="http://youtube.com/MegaGlest"><img src="/assets/youtube-hand-drawn-32.png" alt="Youtube icon"
+            style="display: float; background-color: #FFFFFF; border-radius: 3px" width="32" /></a>
+        <a href="http://moddb.com/games/MegaGlest"><img src="/assets/moddb-32.png" alt="ModDB icon"
+            style="display: float" width="32" /></a>
+        <a href="https://flattr.com/submit/auto?user_id=megaglest&amp;url=http://megaglest.org&amp;title=MegaGlest%20website&amp;description=MegaGlest%20website&amp;language=en_US&amp;tags=website&amp;hidden=1"
+          title="Flattr MegaGlest!"><img src="/assets/flattr-badge-medium.png" alt="Flattr icon" style="display: float;"
+            width="32" /></a><br />
+        <h3 style="text-align: center"><a href="/donations">Donate!</a></h3>
+      </div>
+
+    </div>
+    <div class="down_image"></div>
+  </div>
+  <!-- end right column -->
+
+  <!-- start content -->
+  <!-- end menu -->
+  <!-- start content -->
+  <div id="content">
+    <div id="article">
+      <h1>{{ page.title }}</h1>
+      {{ content }}
+      <div id="end_article"></div>
+    </div>
+  </div>
+  <!-- start footer -->
+  <div id="footer">
+    <div id="footer_left"></div>
+    <div id="footer_right"></div>
+    <ul>
+      <li><a href="/privacy">Privacy</a></li>
+      <li><a href="/license"><img src="/assets/gpl_osi.png" alt="GNU GPL and OSI logos" /></a></li>
+      <li><a href="/credits">Credits</a></li>
+    </ul>
+  </div>
+  <!-- end footer -->
+</body>
+
+</html>

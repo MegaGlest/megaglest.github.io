@@ -1,0 +1,24 @@
+---
+layout: main
+title:  "Media"
+date:   2022-02-06 20:18:25 +0000
+categories: Media
+---
+
+
+<h2>Screenshots</h2>
+<div class="gallery_container">
+{% for image in site.static_files %}
+{% if image.path contains 'media/pics/small' %}
+  <a class="gallery" href="pics/{{ image.name }}"><img src="pics/small/{{ image.name }}" alt="{{ image.name }}"></a>
+{% endif %}
+{% endfor %}
+</div>
+
+<h2>Videos</h2>
+<h3>Trailer</h3>
+<video poster="/assets/videos/megaglest_trailer_cover_small.jpg" controls="" preload="none" width="450" height="263">
+  <source src="/assets/videos/megaglest_game_trailer_lq.webm" type="video/webm">
+  <source src="/assets/videos/megaglest_game_trailer_lq.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
