@@ -1,5 +1,4 @@
 /* cmsms stylesheet: main modified: 12/21/2015 11:43:21 PM */
-
 body {
     margin: 0 auto;
     width: 1016px;
@@ -8,15 +7,6 @@ body {
     font-size: 0.8em;
     color: #fff6c0;
     font-family: "DejaVu Sans Condensed", "Lucida Sans Unicode","Lucida Grande","Lucida Sans", sans-serif;
-}
-
-/*
-For mobile firefox and chrome.
-*/
-@media only screen and (max-width: 1024px) {
-    body {
-        margin-left: 200px;
-    }
 }
 
 /*
