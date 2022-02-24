@@ -49,10 +49,12 @@
         {% break %}
         {% endif %}
         {% endfor %}
+        {% if site.news.size > 3 %}
+        <li>
+          <a href="/news">{{ site.news | size | minus:3 }} more...</a>
+        </li>
+        {% endif %}
       </ul>
-      {% if site.news.size > 3 %}
-      <a class="module" href="/news">{{ site.news | size | minus:3 }} more...</a>
-      {% endif %}
 
       <!-- Server module -->
       <!-- <h3 id="servers"><a href="http://megaglest.org/servers.html"><img src="uploads/megaglest2011/titles/servers.png" alt="Current servers" /></a></h3> -->
@@ -87,10 +89,12 @@
         {% break %}
         {% endif %}
         {% endfor %}
+        {% if site.blogs.size > 4 %}
+        <li>
+          <a href="/blogs">{{ site.blogs | size | minus:4 }} more...</a>
+        </li>
+        {% endif %}
       </ul>
-      {% if site.blogs.size > 4 %}
-      <a class="module" href="/blogs">{{ site.blogs | size | minus:4 }} more...</a>
-      {% endif %}
 
       <!-- Forums module -->
       <!-- Commented out since SMF returns horrible things right now. We'll try to update it to the new 2.0 API
@@ -159,7 +163,7 @@
         Translations
         <ul>
           <li><a
-              href="http://translate.google.com/translate?sl=en&amp;ie=UTF-8&amp;act=url&amp;u=http%3A%2F%2Fmegaglest.org%2Fdownload">Google
+              href="http://translate.google.com/translate?sl=en&amp;ie=UTF-8&amp;act=url&amp;u={{ site.url | append: page.url | url_encode }}">Google
               translation of this page</a></li>
         </ul>
         <br />
