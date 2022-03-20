@@ -12,15 +12,11 @@ categories: megaglest
 If you want to report a bug you can do it in the forum but before look at this:
 
 [**How to report problems/bugs**](https://forum.megaglest.org/index.php?topic=5332.0)
+
 ## IRC
 
-Host: irc.megaglest.org (Freenode IRC network)
+#MegaGlest on [Libera Chat](https://libera.chat) ([webchat](https://web.libera.chat/#megaglest))
 
-Port: 6667
-
-Channel: #MegaGlest
-
-[**Webchat**](http://chat.megaglest.org/)
 ## Mailing list
 
 megaglest-developers[at]lists.sourceforge.net
