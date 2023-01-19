@@ -1,7 +1,7 @@
 ---
 layout: main
 title:  "Credits"
-date:   2022-02-06 20:18:25 +0000
+date:   2023-01-19 18:07:00 +0000
 categories: megaglest
 ---
 
@@ -18,19 +18,19 @@ categories: megaglest
 
 The following companies and institutions kindly support MegaGlest by provding services for free or at reduced rates - Thank you very much!
 
-Source code repositories and release hosting:
+Source code repositories and release hosting:\
 [![GitHub](/assets/logos/GitHub_Logo.png "GitHub")](https://github.com/) 
 
-Continuous integration services:
+Continuous integration services:\
 [![Travis CI](/assets/logos/travis-mascot-logo.png "Travis CI")](https://travis-ci.com/) 
 
-Translation collaboration platform and services:
+Translation collaboration platform and services:\
 [![Transifex](/assets/logos/transifex_logo.png "Transifex")](https://transifex.com/)
 
-Secure email hosting:
+Secure email hosting:\
 [![Tutanota](/assets/logos/tutanota-logo-red-black-font.png "Tutanota")](https://tutanota.com/) 
 
-.MG domain name registration:
+.MG domain name registration:\
 [Dot.MG](http://dot.mg/)
 
 ## Web development
