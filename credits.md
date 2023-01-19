@@ -16,19 +16,22 @@ categories: megaglest
 
 ## Hosting
 
-The following companies and institutions kindly support us by means of hosting our infrastructure and related services - thank you very much!
+The following companies and institutions kindly support MegaGlest by provding services for free or at reduced rates - Thank you very much!
 
-[![GitHub](/assets/logos/GitHub_Logo.png "GitHub")](http://github.org/) Source code repository and releases
+Source code repositories and release hosting:
+[![GitHub](/assets/logos/GitHub_Logo.png "GitHub")](https://github.com/) 
 
-[![MacStadium - The Mac Hosting Authority](/assets/logos/macstadium_logo.png "The Mac Hosting Authority")](http://macstadium.com/) Dedicated Mac OS X build server
+Continuous integration services:
+[![Travis CI](/assets/logos/travis-mascot-logo.png "Travis CI")](https://travis-ci.com/) 
 
-[![Pingdom](/assets/logos/Pingdom_Logo_Yellow2.png "Pingdom")](http://pingdom.com/) Monitoring and performance measurement services
+Translation collaboration platform and services:
+[![Transifex](/assets/logos/transifex_logo.png "Transifex")](https://transifex.com/)
 
-[![Travis CI](/assets/logos/travis-mascot-logo.png "Travis CI")](http://travis-ci.org/) Continuous integration services
+Secure email hosting:
+[![Tutanota](/assets/logos/tutanota-logo-red-black-font.png "Tutanota")](https://tutanota.com/) 
 
-[![Transifex](/assets/logos/transifex_logo.png "Transifex")](http://transifex.com/) Translation collaboration platform and services
-
-[Dot.MG](http://dot.mg/): .MG domain name registration
+.MG domain name registration:
+[Dot.MG](http://dot.mg/)
 
 ## Web development
 
