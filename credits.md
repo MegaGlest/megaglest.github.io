@@ -1,7 +1,7 @@
 ---
 layout: main
 title:  "Credits"
-date:   2023-01-19 18:07:00 +0000
+date:   2023-01-20 11:58:00 +0000
 categories: megaglest
 ---
 
@@ -11,6 +11,7 @@ categories: megaglest
 *   Softcoder
 *   Tom Reynolds (tomreyn)
 *   Jammy(jamjamman)
+*   Titison
 *   Filux
 *   Everlasting gratitude goes to [the developers of the original Glest game](http://glest.org/en/credits.php)
 
@@ -28,7 +29,7 @@ Translation collaboration platform and services:\
 [![Transifex](/assets/logos/transifex_logo.png "Transifex")](https://transifex.com/)
 
 Secure email hosting:\
-[![Tutanota](/assets/logos/tutanota-logo-red-black-font.png "Tutanota")](https://tutanota.com/) 
+[![Tutanota](/assets/logos/tutanota-logo-white-1.png "Tutanota")](https://tutanota.com/) 
 
 .MG domain name registration:\
 [Dot.MG](http://dot.mg/)
