@@ -28,9 +28,6 @@ Continuous integration services:\
 Translation collaboration platform and services:\
 [![Transifex](/assets/logos/transifex_logo.png "Transifex")](https://transifex.com/)
 
-Secure email hosting:\
-[![Tutanota](/assets/logos/tutanota-logo-white-1.png "Tutanota")](https://tutanota.com/) 
-
 .MG domain name registration:\
 [Dot.MG](http://dot.mg/)
 
