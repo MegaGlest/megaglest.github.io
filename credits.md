@@ -20,7 +20,7 @@ categories: megaglest
 The following companies and institutions kindly support MegaGlest by provding services for free or at reduced rates - Thank you very much!
 
 Game hosting provided by [Evolution Host](https://evolution-host.com/):\
-[![Evolution Host](/assets/logos/evolution-host.png)](https://evolution-host.com/)
+[![Evolution Host](/assets/logos/evolution-host-w-claim.png)](https://evolution-host.com/)
 
 Source code repositories and release hosting:\
 [![GitHub](/assets/logos/GitHub_Logo.png "GitHub")](https://github.com/) 
