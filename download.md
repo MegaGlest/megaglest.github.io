@@ -7,8 +7,9 @@ categories: megaglest
 
 ## Linux
 
-* [**MegaGlest-Installer-3.13.0_x86_64_linux.run**](https://github.com/MegaGlest/megaglest-source/releases/download/3.13.0/MegaGlest-Installer-3.13.0_x86_64_linux.run) 
+* [**MegaGlest-Installer-3.13.0_x86_64_linux.run**](https://github.com/MegaGlest/megaglest-source/releases/download/3.13.0/MegaGlest-Installer-3.13.0_x86_64_linux.run)
 * [**MegaGlest-Installer-3.13.0_i686_linux.run**](https://github.com/MegaGlest/megaglest-source/releases/download/3.13.0/MegaGlest-Installer-3.13.0_i686_linux.run)
+* [**MegaGlest-3.13.0-x86_64.AppImage**](https://github.com/MegaGlest/megaglest-source/releases/download/3.13.0/MegaGlest-3.13.0-x86_64.AppImage)
 
 
 
@@ -30,7 +31,7 @@ categories: megaglest
 
 
 ## Release on Github ( sourcecode ... )
-* [**Release on Github**](https://github.com/MegaGlest/megaglest-source/releases/3.13.0/) 
+* [**Release on Github**](https://github.com/MegaGlest/megaglest-source/releases/3.13.0/)
 
 
 
